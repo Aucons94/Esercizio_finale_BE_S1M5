@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\Eserciziofinale_S1M5\\",
+  "WorkspaceRootPath": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51E74917-126B-4ED2-B9F0-6E3CB5537B30}|Eserciziofinale_S1M5\\Eserciziofinale_S1M5.csproj|c:\\users\\alessandro\\desktop\\back-end\\mese 2\\settimana 1\\esercizio_finale\\eserciziofinale_s1m5\\eserciziofinale_s1m5\\controllers\\violazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E74917-126B-4ED2-B9F0-6E3CB5537B30}|Eserciziofinale_S1M5\\Eserciziofinale_S1M5.csproj|c:\\users\\alessandro\\desktop\\back-end\\mese 2\\settimana 1\\esercizio_finale\\eserciziofinale_s1m5\\controllers\\violazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E74917-126B-4ED2-B9F0-6E3CB5537B30}|Eserciziofinale_S1M5\\Eserciziofinale_S1M5.csproj|solutionrelative:eserciziofinale_s1m5\\controllers\\violazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ViolazioniController.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\Eserciziofinale_S1M5\\Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
               "RelativeDocumentMoniker": "Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\Eserciziofinale_S1M5\\Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Desktop\\Back-end\\Mese 2\\Settimana 1\\Esercizio_finale\\Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
               "RelativeToolTip": "Eserciziofinale_S1M5\\Controllers\\ViolazioniController.cs",
               "ViewState": "AQIAAG0AAAAAAAAAAAAcwL8AAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
