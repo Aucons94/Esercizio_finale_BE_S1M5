@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Eserciziofinale_S1M5.Models.Violazioni>
+
+@{
+    ViewBag.Title = "ListaViolazioni";
+}
+
+<div class="container text-center">
+    <div class="row">
+        <div class="mb-3">
+            <h2 class="text-center">Lista delle violazioni</h2>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Descrizione</th>
+                <th>Contestabile</th>
+                <th style="width: 10vw;">Operazioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var violazione in Model)
+            {
+                <tr>
+                    <td>@violazione.Descrizione</td>
+                    <td>@(violazione.Contestabile ? "Sì" : "No")</td>
+                    <td class="d-flex justify-content-evenly">
+                        @Html.ActionLink("Modifica", "ModificaViolazione", "Violazioni", new { IdViolazione = violazione.IdViolazione }, new { @class = "btn btn-success btn-sm" })
+                        <form action="@Url.Action("EliminaViolazione", "Violazioni")" method="post">
+                            @Html.Hidden("IdViolazione", violazione.IdViolazione)
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger btn-sm">Elimina</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-3">
+        <a href="@Url.Action("AggiungiViolazione", "Violazioni")" class="btn btn-primary">Aggiungi violazione</a>
+    </div>
+</div>

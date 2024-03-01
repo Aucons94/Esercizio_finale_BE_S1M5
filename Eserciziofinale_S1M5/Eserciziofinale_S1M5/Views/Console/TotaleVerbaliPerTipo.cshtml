@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Risultati";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center">Totale Verbali per Trasgressore</h2>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center">Tipo Violazione</th>
+                        <th class="text-center">Numero Verbali Per Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var risultato in ViewBag.Risultati)
+                    {
+                        <tr>
+                            <td class="text-center">@risultato.TipoViolazione</td>
+                            <td class="text-center">@risultato.NrVerbaliPerTipo</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="text-center">
+                <a href="@Url.Action("Console", "Console")" class="btn btn-primary">Torna alla Console</a>
+            </div>
+        </div>
+    </div>
+</div>

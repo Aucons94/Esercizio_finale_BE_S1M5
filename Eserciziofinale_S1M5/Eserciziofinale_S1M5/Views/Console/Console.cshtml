@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Console";
+}
+
+
+<h2 class="text-center">Console</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            @using (Html.BeginForm("TotaleVerbaliPerTipo", "Console", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-primary w-100 custom-btn">Totale Verbali per Trasgressore</button>
+            }
+        </div>
+        <div class="col-md-3">
+            @using (Html.BeginForm("TotalePuntiDecurtatiPerTrasgressore", "Console", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-primary w-100 custom-btn">Totale Punti Decurtati Per Trasgressore</button>
+            }
+        </div>
+        <div class="col-md-3">
+            @using (Html.BeginForm("VerbaliConDecurtamentoPiuDi10Punti", "Console", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-primary w-100 custom-btn">Verbali Con Decurtamento Piu Di 10 Punti</button>
+            }
+        </div>
+        <div class="col-md-3">
+            @using (Html.BeginForm("VerbaliConImportoSuperioreA400", "Console", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-primary w-100 custom-btn">Verbali Con Importo Superiore A 400</button>
+            }
+        </div>
+    </div>
+</div>

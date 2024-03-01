@@ -1,0 +1,41 @@
+﻿@{
+    List<dynamic> risultati = ViewBag.Risultati;
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center">Verbali Con Importo Superiore A 400</h2>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center">Cognome</th>
+                        <th class="text-center">Nome</th>
+                        <th class="text-center">Indirizzo Violazione</th>
+                        <th class="text-center">Data Violazione</th>
+                        <th class="text-center">Importo</th>
+                        <th class="text-center">Decurtamento Punti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var risultato in risultati)
+                    {
+                        <tr>
+                            <td class="text-center">@risultato.Cognome</td>
+                            <td class="text-center">@risultato.Nome</td>
+                            <td class="text-center">@risultato.IndirizzoViolazione</td>
+                            <td class="text-center">@risultato.DataViolazione.ToString("dd/MM/yyyy")</td>
+                            <td class="text-center">@risultato.Importo</td>
+                            <td class="text-center">@risultato.DecurtamentoPunti</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="text-center">
+                <a href="@Url.Action("Console", "Console")" class="btn btn-primary">Torna alla Console</a>
+            </div>
+        </div>
+    </div>
+</div>
